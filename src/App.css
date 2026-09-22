@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+}
+
+.pagina {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.titulo p {
+  color: #666;
+}
+
+.secao {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ccc;
+}
+
+.secao h2 {
+  margin-top: 0;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.formulario input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.formulario button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #444;
+}
+
+.lista {
+  margin-top: 20px;
+}
+
+.produto,
+.cliente {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.produto h3,
+.cliente h3 {
+  margin-top: 0;
+}
+
+.produto p,
+.cliente p {
+  margin: 5px 0;
+}
