@@ -1,16 +1,98 @@
-# React + Vite
+# Atividade 3.1 - Cadastro de Clientes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Problema solucionado
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido para facilitar o cadastro e a visualização de clientes. A aplicação permite cadastrar nome, e-mail e telefone, enviando os dados para uma API e armazenando as informações no banco de dados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias utilizadas
 
-## React Compiler
+- React
+- Vite
+- JavaScript
+- Node.js
+- Express
+- MySQL
+- HTML
+- CSS
+- Git e GitHub
+- Postman
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como executar o Front-End
 
-## Expanding the ESLint configuration
+Abra o terminal na pasta do projeto e execute:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install
+
+Depois execute:
+
+npm run dev
+
+O Front-End será executado no endereço:
+
+http://localhost:5173
+
+## Como executar o Back-End
+
+Abra outro terminal na pasta do projeto e execute:
+
+node server.js
+
+O Back-End será executado na porta 3000:
+
+http://localhost:3000
+
+## Rotas da API
+
+### GET /clientes
+
+Busca todos os clientes cadastrados no banco de dados.
+
+GET http://localhost:3000/clientes
+
+### POST /clientes
+
+Cadastra um novo cliente no banco de dados.
+
+POST http://localhost:3000/clientes
+
+Exemplo dos dados enviados:
+
+{
+  "nome": "Gabriel",
+  "email": "gabriel@gmail.com",
+  "telefone": "71999999999"
+}
+
+## Estrutura do Banco de Dados
+
+Banco de dados:
+
+empresa_db
+
+Tabela:
+
+cliente
+
+Campos:
+
+- id - INT
+- nome - VARCHAR(100)
+- email - VARCHAR(100)
+- telefone - VARCHAR(20)
+
+## Funcionalidades
+
+- Cadastro de produtos.
+- Cadastro de clientes.
+- Exibição dos produtos na tela.
+- Exibição dos clientes na tela.
+- Envio dos dados dos clientes utilizando fetch().
+- Cadastro dos clientes no banco de dados MySQL.
+- Consulta dos clientes através da API.
+- Interface estilizada com CSS.
+- Comunicação entre Front-End, Back-End e Banco de Dados.
+
+## Integrantes
+
+- Gabriel Henrique
+- Kaique Nunes
